@@ -1,0 +1,15 @@
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\parser\RdfParser.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\storage\TripleStore.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\jersey\resource\InventorResource.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\model\PostalAddress.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\parser\ZippedXmlReader.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\jersey\resource\PatentResource.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\model\Inventor.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\parser\SingleXmlReader.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\jersey\service\OperatingSystemDetector.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\test\Test1.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\model\Patent.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\model\Applicant.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\jersey\service\TripleStoreAccessor.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\jersey\resource\UploadFileResource.java
+H:\Users\Administrator\workspace\inpi\src\main\java\com\inpi\model\Agent.java

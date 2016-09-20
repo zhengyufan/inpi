@@ -1,0 +1,15 @@
+com\inpi\jersey\service\TripleStoreAccessor.class
+com\inpi\model\Inventor.class
+com\inpi\model\Patent.class
+com\inpi\jersey\resource\InventorResource.class
+com\inpi\parser\ZippedXmlReader.class
+com\inpi\model\PostalAddress.class
+com\inpi\parser\SingleXmlReader.class
+com\inpi\jersey\resource\UploadFileResource.class
+com\inpi\parser\RdfParser.class
+com\inpi\model\Applicant.class
+com\inpi\jersey\service\OperatingSystemDetector.class
+com\inpi\jersey\resource\PatentResource.class
+com\inpi\test\Test1.class
+com\inpi\model\Agent.class
+com\inpi\storage\TripleStore.class
