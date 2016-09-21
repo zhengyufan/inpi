@@ -12,19 +12,18 @@ import org.apache.jena.query.ResultSetFormatter;
 
 import com.inpi.jersey.service.TripleStoreAccessor;
 
-@Path("inventor")
-public class InventorResource {
-	
+@Path("applicant")
+public class ApplicantResource {
+
     @POST
     @Consumes("application/x-www-form-urlencoded")
     @Produces(MediaType.TEXT_PLAIN)
-    public String getPatentListByInventor(  @FormParam("given-name") String givenname,
+    public String getPatentListByApplicant(  @FormParam("given-name") String givenname,
     										@FormParam("family-name") String familyname) {
     	
-    	ResultSet results = TripleStoreAccessor.findPatentListByInventor(givenname.toUpperCase(), familyname.toUpperCase());
+    	ResultSet results = TripleStoreAccessor.findPatentListByApplicant(givenname.toUpperCase(), familyname.toUpperCase());
     	String output = ResultSetFormatter.asText(results);
     	
         return output;
     }
-    
 }

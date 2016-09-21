@@ -107,9 +107,9 @@ public class RdfParser {
 						a.getGivenName().replaceAll(" ", "_") + "_" + 
 						a.getId();
 		Resource applicant = model.createResource(appuri);  
-		applicant.addProperty(RDFS.label, a.getFamilyName()); // tir� du <applicant><last-name>
-		applicant.addProperty(VCARD.Family, a.getFamilyName()); // tir� du <applicant><last-name>
-		applicant.addProperty(VCARD.Given, a.getGivenName()); // tir� du <applicant><first-name>
+		applicant.addProperty(RDFS.label, a.getFamilyName().toUpperCase()); // tir� du <applicant><last-name>
+		applicant.addProperty(VCARD.Family, a.getFamilyName().toUpperCase()); // tir� du <applicant><last-name>
+		applicant.addProperty(VCARD.Given, a.getGivenName().toUpperCase()); // tir� du <applicant><first-name>
 		//app.addProperty(VCARD.ADR, a.getAddress().toString()); // tir� du <applicant><address><address-1>
 		applicant.addProperty(VCARD.ADR, model.createResource()
 				                        .addProperty(VCARD.Street, a.getAddress().getAddress1())
@@ -127,9 +127,9 @@ public class RdfParser {
 						inv.getGivenName().replaceAll(" ", "_") + "_" + 
 						inv.getId();
 		Resource inventor = model.createResource(invuri); // creation of a blank node
-		inventor.addProperty(RDFS.label, inv.getFamilyName()); // tir� du <inventor><last-name>
-		inventor.addProperty(VCARD.Family, inv.getFamilyName()); // tir� du <inventor><last-name>
-		inventor.addProperty(VCARD.Given, inv.getGivenName()); // tir� du <inventor><first-name>
+		inventor.addProperty(RDFS.label, inv.getFamilyName().toUpperCase()); // tir� du <inventor><last-name>
+		inventor.addProperty(VCARD.Family, inv.getFamilyName().toUpperCase()); // tir� du <inventor><last-name>
+		inventor.addProperty(VCARD.Given, inv.getGivenName().toUpperCase()); // tir� du <inventor><first-name>
 		inventor.addProperty(VCARD.ADR, model.createResource()
 						                .addProperty(VCARD.Street, inv.getAddress().getAddress1())
 						                .addProperty(VCARD.Locality, inv.getAddress().getAddress2())

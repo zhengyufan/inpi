@@ -46,9 +46,10 @@ public class UploadFileResource {
 		TripleStore.init();
 		TripleStore.loadZippedXmlData(uploadedFileLocation);
 		
-		String output = "<h1>File is successfully uploaded. Data has been transformed into RDF model and saved in triple store!</h1>" + 
-						"<p>To search for patent, please click on the link below :</p> " + 
-						"<li><a href='../../search-patent-list-by-inventor.jsp'>Search patent list by inventor.</a></li>";
+		String output = "<h1>Patent data has been successfully uploaded! </h1>" + 
+						"<h4>To search for patent, please click on the link below :</h4> " + 
+						"<li><a href='../../search-patent-list-by-inventor.jsp'>Search patent list by inventor.</a></li>" +
+						"<li><a href='../../search-patent-list-by-applicant.jsp'>Search patent list by applicant.</a></li>";
 
 		return Response.status(200).entity(output).build();
 
